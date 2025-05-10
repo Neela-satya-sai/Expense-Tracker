@@ -2,7 +2,7 @@ import React from 'react'
 import Stack from '@mui/material/Stack';
 import Button from '@mui/material/Button';
 import Tile from "../Tile/Tile.jsx";
-import Styles from "./HeroBanner.module.css";
+import Styles from "./Herobanner.module.css";
 import PieChat from '../chat/PieChat.jsx';
 import { useAppContext } from '../../AppContext.jsx';
 

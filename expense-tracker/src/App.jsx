@@ -2,7 +2,7 @@ import { createContext, useContext, useState, useEffect } from "react";
 import Stack from "@mui/material/Stack";
 import Button from "@mui/material/Button";
 import "./App.css";
-import Herobanner from "./components/HeroBanner/Herobanner";
+import Herobanner from "./components/Herobanner/Herobanner";
 import Tile from "./components/Tile/Tile.jsx";
 import GridTransactionSpending from "./components/Grid/GridTransactionSpending.jsx";
 import {
