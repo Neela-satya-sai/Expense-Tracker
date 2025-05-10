@@ -1,0 +1,24 @@
+.header{
+  color: aliceblue;
+}
+.transactions{
+  width: 100%;
+  padding: 5px 10px;
+  background-color: aliceblue;
+  color: black;
+  border-radius: 10px;
+}
+
+.transaction{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: aquamarine;
+  padding: 5px 5px;
+  margin-bottom: 4px;
+  
+}
+.icons{
+  display: flex;
+  gap: 10px;
+}

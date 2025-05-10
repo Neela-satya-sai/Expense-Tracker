@@ -1,0 +1,13 @@
+.header{
+  color: aliceblue;
+}
+
+.topExpences{
+  background-color: aliceblue;
+  border-radius: 10px;
+}
+
+.barChat{
+  width: 100% !important; 
+  height: 100% !important;
+}
