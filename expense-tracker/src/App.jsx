@@ -14,6 +14,7 @@ import {
   useNavigate,
 } from "react-router-dom";
 import AddBalance from "./components/modal/AddBalance.jsx";
+import AddExpence from "./components/modal/AddExpence.jsx";
 import { AppProvider, useAppContext } from "./AppContext";
 
 
@@ -41,6 +42,7 @@ function App() {
       <Herobanner />
       <GridTransactionSpending />
       <AddBalance />
+      <AddExpence/>
    
     </AppProvider>
 

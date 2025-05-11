@@ -51,11 +51,14 @@ export default class BarChat extends PureComponent {
 
   render() {
     return (
-      <ResponsiveContainer >
+      <div style={{width : "300px", height:"300px"}}>
+             <ResponsiveContainer >
         <BarChart width={1} height={30} data={data}>
           <Bar dataKey="uv" fill="#8884d8" />
         </BarChart>
       </ResponsiveContainer>
+      </div>
+     
     );
   }
 }

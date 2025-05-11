@@ -7,14 +7,14 @@ import PieChat from '../chat/PieChat.jsx';
 import { useAppContext } from '../../AppContext.jsx';
 
 const Herobanner = () => {
-  let {income,expence} = useAppContext();
+  let {income,expences} = useAppContext();
   // console.log(Styles);
   //  console.log(income,expence);
   return (
     <Stack spacing={3} direction={'row'} className={Styles.herobanner}> 
       
        <Tile amount={income} title={"+Add Income"} type ={"Wallet Balance"}></Tile>
-       <Tile amount={expence} title={"+Add Expences"} type={"Expences"}></Tile>
+       <Tile amount={expences} title={"+Add Expences"} type={"Expences"}></Tile>
        <PieChat></PieChat>
     </Stack>
   )

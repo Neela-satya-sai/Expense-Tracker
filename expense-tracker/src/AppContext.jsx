@@ -3,17 +3,23 @@ import { createContext, useContext, useState, useEffect } from "react";
 const AppContext = createContext();
 
 export const AppProvider = ({ children }) => {
-  const [income, setIncome] = useState(Number(localStorage.getItem("income")) || 5000);
-  const [expence, setExpence] = useState(Number(localStorage.getItem("expence")) || 0);
+  const [income, setIncome] = useState(Number(localStorage.getItem("income")) || 0);
+  const [expences, setExpences] = useState(Number(localStorage.getItem("expences")) || 0);
+  const [expenceList, setExpenceList] = useState( JSON.parse(localStorage.getItem("expenceList") || "[]")  );
   const [isModalOpen, setModalOpen] = useState(false);
+  const [isModalOpen2, setModalOpen2 ]  = useState(false);
 
   useEffect(() => {
     localStorage.setItem("income", income);
-    localStorage.setItem("expence", expence);
-  }, [income, expence]);
+    localStorage.setItem("expences", expences);
+  }, [income, expences]);
+  
+  useEffect(() => {
+    localStorage.setItem("expenceList", JSON.stringify(expenceList));
+  }, [expenceList]);
 
   return (
-    <AppContext.Provider value={{ income, setIncome, expence, setExpence, isModalOpen, setModalOpen }}>
+    <AppContext.Provider value={{ income, setIncome, expences, setExpences, expenceList, setExpenceList, isModalOpen, setModalOpen, isModalOpen2, setModalOpen2 }}>
       {children}
     </AppContext.Provider>
   );

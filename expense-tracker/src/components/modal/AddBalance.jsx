@@ -30,11 +30,11 @@ const AddBalance = () => {
       <div className={styles.modal} onClick={(e) => e.stopPropagation()}>
         <h2>Add Balance</h2>
         <input
-          type="text"
+          type="number"
           placeholder="Income Amount"
           onChange={(event) => handleInput(event)}
         />
-        <button onClick={() => addIncome(inputfield)}>Add Balance</button>
+        <button type="submit" onClick={() => addIncome(inputfield)}>Add Balance</button>
         <button onClick={() => setModalOpen(false)}>Cancel</button>
       </div>
     </div>
