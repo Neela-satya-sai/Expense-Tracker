@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import styles from "./AddExpence.module.css";
 import { useAppContext } from "../../AppContext";
-import Transactions from "../transactions/Transactions";
+import Transactions from "../expenseItem/ExpenseItem";
 
 const AddExpence = () => {
   let {
@@ -36,6 +36,21 @@ const AddExpence = () => {
   //     setInputfield(Number(event.target.value));
   //   }
   // }
+  function onDelete() {
+    console.log("clicked delete");
+    setIncome((prev) => prev + Number(price));
+    setExpences((prev) => prev - Number(price));
+    let filteredList = expenceList.filter(
+      (eachExpence) => eachExpence.title != title
+    );
+    setExpenceList(filteredList);
+  }
+  function onEdit() {
+    console.log("clicked edit");
+    // onDelete();
+    setModalOpen2(true);
+    
+  }
 
   function handleForm(event) {
     event.preventDefault();
@@ -77,6 +92,7 @@ const AddExpence = () => {
             <option value="food">Food</option>
             <option value="entertainment">Entertainment</option>
             <option value="travel">Travel</option>
+            <option value="bills">Bills</option>
           </select>
           <input type="date" required name="date" />
           <button type="submit" className={styles.addExpense}>

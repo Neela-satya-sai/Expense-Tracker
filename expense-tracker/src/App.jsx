@@ -41,8 +41,8 @@ function App() {
       <h1 style={{ margin: "0px", padding: "10px 18px", color: "aliceblue" }}>Expense Tracker</h1>
       <Herobanner />
       <GridTransactionSpending />
-      <AddBalance />
-      <AddExpence/>
+      <AddBalance /> 
+      <AddExpence/>   
    
     </AppProvider>
 

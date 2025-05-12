@@ -11,12 +11,12 @@ const Herobanner = () => {
   // console.log(Styles);
   //  console.log(income,expence);
   return (
-    <Stack spacing={3} direction={'row'} className={Styles.herobanner}> 
+    <div spacing={3} direction={'row'} className={Styles.herobanner}> 
       
        <Tile amount={income} title={"+Add Income"} type ={"Wallet Balance"}></Tile>
        <Tile amount={expences} title={"+Add Expences"} type={"Expences"}></Tile>
        <PieChat></PieChat>
-    </Stack>
+    </div>
   )
 }
 

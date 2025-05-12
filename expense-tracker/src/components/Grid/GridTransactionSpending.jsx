@@ -1,7 +1,7 @@
 import React from 'react'
 import { Grid } from '@mui/material'
 import Styles  from "./GridTransactionSpending.module.css";
-import Transactions from '../transactions/Transactions';
+import ExpenseItem from '../expenseItem/ExpenseItem';
 import TopExpences from '../topExpences/TopExpences';
 import { useAppContext } from "../../AppContext";
 
@@ -13,13 +13,16 @@ const GridTransactionSpending = () => {
   
   //  console.log(expenceList[0]);
   return (
-    <Grid container spacing={5} height={"50vh"} margin={"12px 12px"}> 
-      <Grid item xs={12} md={7}  >
+    <Grid container spacing={5} height={"50vh"} margin={"12px 12px"} > 
+      <Grid item xs={12} md={7} lg={7} width={"100%"} >
+     
         <h3 className={Styles.header}>Recent Transations</h3>
-         {expenceList.map((eachExpence)=>  <Transactions data={eachExpence}></Transactions> )}
+        {expenceList.map((eachExpence)=>  <ExpenseItem key={eachExpence.title} data={eachExpence}></ExpenseItem> )}
+      
+       
        
       </Grid>
-      <Grid item xs={12} md={5} >
+      <Grid item xs={12} md={5}  lg={5}  width={"100%"}>
         <TopExpences></TopExpences>
       </Grid>
     
