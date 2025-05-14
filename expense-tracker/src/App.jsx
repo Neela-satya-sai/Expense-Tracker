@@ -4,7 +4,7 @@ import { SnackbarProvider } from 'notistack';
 
 function App() {
   return (
-    <SnackbarProvider >
+    <SnackbarProvider anchorOrigin={{ vertical: 'bottom', horizontal: 'center' }}  >
       <div>
         <Home />
       </div>
