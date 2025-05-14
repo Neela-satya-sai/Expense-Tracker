@@ -14,7 +14,7 @@ const Herobanner = () => {
     <div spacing={3} direction={'row'} className={Styles.herobanner}> 
       
        <Tile amount={income} title={"+Add Income"} type ={"Wallet Balance"}></Tile>
-       <Tile amount={expences} title={"+Add Expences"} type={"Expences"}></Tile>
+       <Tile amount={expences} title={"+Add Expenses"} type={"Expences"}></Tile>
        <PieChat></PieChat>
     </div>
   )
