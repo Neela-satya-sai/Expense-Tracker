@@ -22,13 +22,13 @@
 }
 
 .success{
-  background: linear-gradient(90deg, #11bc11, #66eb07);
-  color:#fff;
+  background: linear-gradient(90deg, #f7df05, #e1750f);
+  color:#191616;
 }
 
 .failure{
-  background: linear-gradient(90deg, #FF9595, #FF4747, #e80a0a);
-  color:#fff;
+  background: linear-gradient(90deg, #ed1c09, #dc5516, #c3f326);
+  color:#0a0909;
 }
 
 .shadow{

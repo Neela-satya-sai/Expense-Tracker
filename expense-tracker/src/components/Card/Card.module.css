@@ -19,10 +19,10 @@
   font-weight: 700;
 }
 .success{
-  color:#9DFF5B;
+  color:#0f7e29;
 }
 .failure{
-  color:#F4BB4A;
+  color:#ca2608;
 }
 @media(max-width:767px){
   .card{

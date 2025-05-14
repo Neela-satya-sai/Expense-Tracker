@@ -153,9 +153,9 @@ export default function Home() {
 
         <BarChart
           data={[
-            { name: "Food", value: categorySpends.food },
-            { name: "Entertainment", value: categorySpends.entertainment },
-            { name: "Travel", value: categorySpends.travel },
+            { name: "Food", value: categoryCount.food },
+            { name: "Entertainment", value: categoryCount.entertainment },
+            { name: "Travel", value: categoryCount.travel },
           ]}
         />
       </div>
